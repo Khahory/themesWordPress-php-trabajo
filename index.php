@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" type="image/x-icon"/>
 </head>
 
+
+<?php wp_head(); ?>
 <body>
 <h1><a href="<?php bloginfo('url'); ?>"title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 <h2><p><?php bloginfo('description'); ?></p></h2>
@@ -26,6 +28,7 @@
             <h1>
                 <img src="<?php print IMAGES; ?>/logo.jpg" alt="<?php bloginfo('name'); ?>" />
             </h1>
+            <?php get_search_form(); ?>
         </header>
     </div>
 </div>
